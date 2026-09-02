@@ -1,0 +1,22 @@
+[package]
+name = "virustic"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A small, deterministic de Bruijn graph assembler for teaching and reproducible experiments"
+repository = "https://github.com/williamtbarker/virustic"
+keywords = ["bioinformatics", "assembly", "de-bruijn-graph", "fasta", "fastq"]
+categories = ["science", "command-line-utilities"]
+
+[lib]
+name = "virustic"
+path = "src/lib.rs"
+
+[[bin]]
+name = "virustic"
+path = "src/main.rs"
+
+[profile.release]
+lto = "thin"
+strip = true
+

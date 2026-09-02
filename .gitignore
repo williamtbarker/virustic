@@ -1,0 +1,5 @@
+/target/
+*.fasta.gz
+*.fastq.gz
+.DS_Store
+
